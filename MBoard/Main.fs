@@ -58,5 +58,17 @@ module Site =
 
     open WebSharper.Suave
     open Suave.Web
+    open Suave.Http
+    open System.Net
+    open Suave.Logging
 
-    do startWebServer defaultConfig (WebSharperAdapter.ToWebPart Main)
+    let config = 
+         let port = System.Environment.GetEnvironmentVariable("PORT")
+         let ip127 = IPAddress.Parse("127.0.0.1")
+         let ipZero = IPAddress.Parse("0.0.0.0")
+         { defaultConfig with logger = Loggers.saneDefaultsFor LogLevel.Verbose
+                              bindings = 
+                                  [ (if port = null then HttpBinding.mk HTTP ip127 (uint16 8083)
+                                     else HttpBinding.mk HTTP ipZero (uint16 port)) ] }
+
+    do startWebServer config (WebSharperAdapter.ToWebPart Main)
