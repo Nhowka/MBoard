@@ -1,1 +1,25 @@
-web: mono ./MBoard/obj/Debug/MBoard.exe
+web: cp ./packages/WebSharper/lib/net40/WebSharper.InterfaceGenerator.dll ./MBoard/bin/Debug/
+web: cp ./packages/Microsoft.Owin/lib/net45/Microsoft.Owin.dll ./MBoard/bin/Debug/
+web: cp ./packages/WebSharper.Owin/lib/net45/WebSharper.Owin.dll ./MBoard/bin/Debug/
+web: cp ./packages/Owin/lib/net40/Owin.dll ./MBoard/bin/Debug/
+web: cp ./packages/WebSharper/lib/net40/WebSharper.Core.dll ./MBoard/bin/Debug/
+web: cp ./packages/WebSharper.Suave/lib/net45/WebSharper.Suave.dll ./MBoard/bin/Debug/
+web: cp ./packages/WebSharper/lib/net40/WebSharper.Collections.dll ./MBoard/bin/Debug/
+web: cp ./packages/Suave/lib/net40/Suave.dll ./MBoard/bin/Debug/
+web: cp ./packages/WebSharper/lib/net40/WebSharper.JQuery.dll ./MBoard/bin/Debug/
+web: cp ./packages/WebSharper/tools/net40/Mono.Cecil.Pdb.dll ./MBoard/bin/Debug/
+web: cp ./packages/WebSharper.Owin/lib/net45/HttpMultipartParser.dll ./MBoard/bin/Debug/
+web: cp ./packages/WebSharper.UI.Next/lib/net40/WebSharper.UI.Next.Templating.dll ./MBoard/bin/Debug/
+web: cp ./packages/WebSharper/lib/net40/WebSharper.Core.JavaScript.dll ./MBoard/bin/Debug/
+web: cp ./packages/WebSharper/lib/net40/WebSharper.Web.dll ./MBoard/bin/Debug/
+web: cp ./packages/WebSharper/lib/net40/WebSharper.Sitelets.dll ./MBoard/bin/Debug/
+web: cp ./packages/WebSharper/lib/net40/WebSharper.Main.dll ./MBoard/bin/Debug/
+web: cp ./packages/WebSharper/tools/net40/Mono.Cecil.Mdb.dll ./MBoard/bin/Debug/
+web: cp ./packages/Microsoft.Owin/lib/net45/Microsoft.Owin.dll ./MBoard/bin/Debug/
+web: cp ./packages/WebSharper/lib/net40/WebSharper.Control.dll ./MBoard/bin/Debug/
+web: cp ./packages/WebSharper/tools/net40/Mono.Cecil.dll ./MBoard/bin/Debug/
+web: cp ./packages/WebSharper.Owin/lib/net45/WebSharper.Owin.dll ./MBoard/bin/Debug/
+web: cp ./packages/WebSharper/lib/net40/WebSharper.JavaScript.dll ./MBoard/bin/Debug/
+web: cp ./packages/Mono.Cecil/lib/net40/Mono.Cecil.Rocks.dll ./MBoard/bin/Debug/
+web: cp ./packages/WebSharper.UI.Next/lib/net40/WebSharper.UI.Next.dll ./MBoard/bin/Debug/
+web: mono ./MBoard/bin/Debug/MBoard.exe
